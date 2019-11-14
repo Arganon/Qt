@@ -1,0 +1,17 @@
+#include "dialogchangemobopername.h"
+#include "ui_dialogchangemobopername.h"
+#include "QGroupBox"
+#include "QLabel"
+#include "QLineEdit"
+
+DialogChangeMobOperName::DialogChangeMobOperName(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::DialogChangeMobOperName)
+{
+    ui->setupUi(this);
+}
+
+DialogChangeMobOperName::~DialogChangeMobOperName()
+{
+    delete ui;
+}
