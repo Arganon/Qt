@@ -17,10 +17,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->treeView->setModel(m_ItemModel);
     m_AddButton = new QPushButton("Add Element", ui->treeView);
     connect(m_AddButton, SIGNAL(clicked()), this, SLOT(onButtonClicked()));
-
-    updateButtonsPosition();
-    resizeEvent(nullptr);
-    ui->treeView->update();
 }
 
 MainWindow::~MainWindow()
